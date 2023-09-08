@@ -14,32 +14,32 @@ public class Algorithm {
         }
     }
 
-    public int partition(int[] array, int left, int right) {
-        //exam: 1 12 5 [7] 6 9 2 : 7 is pivot
-        //Run from left: i - Run from right: j
-        int i = left, j = right;
-        //Instance a variable: pivot - trục
-        int pivot = array[(left + right) / 2];
-        //Create a temp variable
-        int tmp;
-        while (i <= j) {
-            while (array[i] < pivot) {
-                i++;
-            }
-            while (array[j] > pivot) {
-                j--;
-            }
-            if (i <= j) {
-                //Execute swap between value of index [i] and value of index [j]
-                tmp = array[i];
-                array[i] = array[j];
-                array[j] = tmp;
-                i++;
-                j--;
-            }
-        };
-        return i;
-    }
+//    public int partition(int[] array, int left, int right) {
+//        //exam: 1 12 5 [7] 6 9 2 : 7 is pivot
+//        //Run from left: i - Run from right: j
+//        int i = left, j = right;
+//        //Instance a variable: pivot - trục
+//        int pivot = array[(left + right) / 2];
+//        //Create a temp variable
+//        int tmp;
+//        while (i <= j) {
+//            while (array[i] < pivot) {
+//                i++;
+//            }
+//            while (array[j] > pivot) {
+//                j--;
+//            }
+//            if (i <= j) {
+//                //Execute swap between value of index [i] and value of index [j]
+//                tmp = array[i];
+//                array[i] = array[j];
+//                array[j] = tmp;
+//                i++;
+//                j--;
+//            }
+//        };
+//        return i;
+//    }
 
     /*
     public int binarySearch(int[] array, int value, int left, int right) {
